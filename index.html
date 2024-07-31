@@ -129,8 +129,48 @@
                     </div>
                   </div>
                   <div class="contentWrap">
-                    <div class="content overview">123123</div>
-                    <div class="content content-0 initial">Greensock</div>
+                    <div class="content overview">
+                        <div>
+                            <div style="display: flex;">
+                                <div style="position: relative;">
+                                    <img src="./public/journey-overview-1.png" height="500" style="margin-left: 120px;" />
+                                    <img src="./public/journey-overview-2.png" height="200" style="position: absolute; top: 0; left: 0;" />
+                                    <img src="./public/journey-overview-3.png" height="100" style="position: absolute;
+                                    top: 400px; left: 0;" />
+                                </div>
+                                <div style="color: var(--primary); line-height: 2; font-size: 48px; font-family: PF BeauSans Pro Bold; margin-left: 20px; margin-top: 50px;">
+                                    <div>VCS</div>
+                                    <div>Journey through </div>
+                                    <div>the Decade</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 18px; margin-left: 200px; line-height: 1.5; text-align: justify;">
+                                “Hành trình 10 năm - 1 thập kỷ của những phấn đấu bền bỉ, 1 thập kỷ của nỗ lực khẳng định tên tuổi, trí tuệ người Vn trong nước và quốc tế. 1 thập kỷ với khởi đầu từ một ban ATTT 6 người tới Công ty ANM hơn 500 người với những thành tích vang danh:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content content-0 initial">
+                        <div>
+                            <div style="display: flex;">
+                                <div style="color: var(--primary); line-height: 2; font-size: 48px; font-family: PF BeauSans Pro Bold; margin-left: 20px; margin-top: 50px;">
+                                    <div>2014</div>
+                                    <div>
+                                        Ban ATTT thành lập, làm tiền đề cho trung tâm ATTT
+                                    </div>
+                                    <div style="font-size: 18px; line-height: 1.5; text-align: justify; color: #222; font-family: PF BeauSans Pro;">
+                                        Lorem ipsum dolor sit amet consectetur. Et semper sagittis dolor sed ultrices. In ipsum convallis accumsan nulla elementum nec arcu scelerisque. Sit id sagittis dolor risus scelerisque in. Nisl morbi dui amet id eget neque congue. Sit ultricies id felis accumsan neque nunc vel.
+                                    </div>
+                                </div>
+                                <div style="position: relative;">
+                                    <img src="./public/journey-2014-1.png" height="500" style="margin-left: 120px;" />
+                                    <img src="./public/journey-2014-2.png" height="200" style="position: absolute; top: -50px; right: -50px;" />
+                                    <img src="./public/journey-2014-3.png" height="100" style="position: absolute;
+                                    top: 400px; right: 0;" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div class="content content-1">2014</div>
                     <div class="content content-2">2015</div>
                     <div class="content content-3">2016</div>
@@ -144,8 +184,20 @@
                   </div> 
                   
                 </div>
-              </div>
-              
+            </div>
+            
+            <div class="swipe-section-1">
+                <section class="panel-1 red">
+                  hello
+                </section>
+                
+                <section class="panel-1 blue">
+                  SWIPE SECTION 3
+                </section>
+                <section class="panel-1 orange">
+                  Last swipe section... continue scrolling
+                </section>
+            </div>
             
             <div class="footer">
                 <div>
@@ -171,7 +223,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script>
-           gsap.registerPlugin(ScrollTrigger);
+            gsap.registerPlugin(ScrollTrigger);
 
             let allowScroll = true; // sometimes we want to ignore scroll-related stuff, like when an Observer-based section is transitioning.
             let scrollTimeout = gsap.delayedCall(1, () => allowScroll = true).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
@@ -274,13 +326,6 @@
                 onUpdate: function(self) { console.log(parseInt(self.progress) === 0) }
             });
     
-    // lineTimeline
-    // .to(`.${styles.sideline}`, { duration: 1 }, 0)
-    // .to(`.${styles.sideline}`, { duration: 0.9, scaleY: 1, ease: "none" }, 0)
-    
-    
-    
-    
     
             headlines.forEach((elem , i) => {    
             
@@ -322,6 +367,73 @@
             
             
             });
+        </script>
+        <script>
+
+            let allowScroll1 = true; // sometimes we want to ignore scroll-related stuff, like when an Observer-based section is transitioning.
+            let scrollTimeout1 = gsap.delayedCall(1, () => allowScroll1 = true).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
+            let currentIndex1 = 0;
+            let swipePanels1 = gsap.utils.toArray(".swipe-section-1 .panel-1");
+            // set z-index levels for the swipe panels
+            gsap.set(swipePanels1, { zIndex: i => swipePanels1.length - i})
+
+            // create an observer and disable it to start
+            let intentObserver1 = ScrollTrigger.observe({
+                type: "wheel,touch",
+                onUp: () => allowScroll1 && gotoPanel1(currentIndex1 - 1, false),
+                onDown: () => allowScroll1 && gotoPanel1(currentIndex1 + 1, true),
+                tolerance: 10,
+                preventDefault: true,
+                onEnable(self) {
+                    allowScroll1 = false;
+                    scrollTimeout1.restart(true);
+                    // when enabling, we should save the scroll position and freeze it. This fixes momentum-scroll on Macs, for example.
+                    let savedScroll1 = self.scrollY();
+                    self._restoreScroll = () => self.scrollY(savedScroll1);
+                    document.addEventListener("scroll", self._restoreScroll, {passive: false});
+                },
+                onDisable: self => document.removeEventListener("scroll", self._restoreScroll)
+            });
+            intentObserver1.disable();
+
+            // handle the panel swipe animations
+            function gotoPanel1(index, isScrollingDown) {
+            // return to normal scroll if we're at the end or back up to the start
+                if ((index === swipePanels1.length && isScrollingDown) || (index === -1 && !isScrollingDown)) {
+                    intentObserver1.disable(); // resume native scroll
+                    return;
+                }
+                allowScroll1 = false;
+                scrollTimeout1.restart(true);
+
+                let target1 = isScrollingDown ? swipePanels1[currentIndex1] : swipePanels1[index];
+                gsap.to(target1, {
+                    yPercent: isScrollingDown ? -100 : 0,
+                    duration: 0.75
+                });
+
+                currentIndex1 = index;
+            }
+
+            // pin swipe section and initiate observer
+            ScrollTrigger.create({
+                trigger: ".swipe-section-1",
+                pin: true,
+                start: "top top",
+                end: "+=200", // just needs to be enough to not risk vibration where a user's fast-scroll shoots way past the end
+                onEnter: (self) => {
+                    if (intentObserver1.isEnabled) { return } // in case the native scroll jumped past the end and then we force it back to where it should be.
+                    self.scroll(self.start + 1); // jump to just one pixel past the start of this section so we can hold there.
+                    intentObserver1.enable(); // STOP native scrolling
+                },
+                onEnterBack: (self) => {
+                    if (intentObserver1.isEnabled) { return } // in case the native scroll jumped backward past the start and then we force it back to where it should be.
+                    self.scroll(self.end - 1); // jump to one pixel before the end of this section so we can hold there.
+                    intentObserver1.enable(); // STOP native scrolling
+                }
+            });
+
+
         </script>
     </body>
 </html>
