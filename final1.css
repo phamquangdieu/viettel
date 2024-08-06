@@ -14,36 +14,17 @@
         display: flex;
         padding: 0 10% !important;
     }
-    #double-quote {
-        height: 10vh;
-        padding-top: 10vh;
-    }
     .block-2-wrapper {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .block-2 .msg-wrap {
-        margin-top: 15vh !important;
-    }
     .block-2 .leader-msg-title {
         font-size: 64px !important;
     }
     .block-2 .leader-short-msg {
         font-size: 24px !important;
-    }
-    .block-2 .img-row {
-        bottom: 10vh !important;
-    }
-    .img-row img {
-        height: 150px;
-        width: 260px;
-    }
-    .block-2 .bg-img-row {
-        height: 210px !important;
-        width: 1160px !important;
-        bottom: 10vh !important;
     }
     #leader-img {
         height: 80vh !important;
@@ -56,7 +37,7 @@
         width: 50px !important;
     }
     .textWrap {
-        width: 150px !important;
+        width: 220px !important;
     }
     /* .year-2013 img:nth-child(1) {
         height: 600px !important;
@@ -79,12 +60,12 @@
         max-width: 50vw !important;
         font-size: 24px !important;
     } */
-    /* .history-title {
-        font-size: 40px !important;
+    .history-title {
+        font-size: 36px !important;
     }
     .history-description {
-        font-size: 20px !important;
-    } */
+        font-size: 18px !important;
+    }
     .award-title {
         font-size: 64px !important;
     }
@@ -147,8 +128,6 @@
         padding: 20px !important;
     }
     .member-card, .member-card-reverse {
-        height: 300px !important;
-        width: 220px !important;
         margin: 0 15px !important;
     }
     .member-wrapper {
@@ -156,11 +135,11 @@
     }
 
     .member-name {
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
 
     .member-quote {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -237,9 +216,16 @@ body {
 
 /* Leader Message */
 
+.block-2-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .block-2 {
     display: flex;
-    padding: 0 60px;
+    padding: 0 10vw;
 }
 
 .block-2 .msg-wrap {
@@ -250,13 +236,13 @@ body {
 
 .block-2 .bg-img-row {
     background-color: #fff;
-    height: 160px;
+    height: calc(15vh + 40px);
     display: flex;
     gap: 20px;
     position: absolute;
     bottom: 10vh;
     z-index: -1;
-    width: 910px;
+    width: calc(48vw + 100px);
     border-radius: 20px;
 }
 
@@ -267,6 +253,22 @@ body {
     position: absolute;
     bottom: 10vh;
     z-index: 1;
+}
+
+.block-2 .img-row img {
+    height: 15vh;
+    width: 12vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.block-2 .img-row .img-row-item {
+    transition: all 500ms linear;
+}
+
+.block-2 .img-row .img-row-item:hover {
+    transform: scale(1.05);
 }
 
 .block-2 .leader-short-msg {
@@ -393,6 +395,7 @@ body {
     justify-content: space-between;
     height: 100%;
     max-height: 500px;
+    width: 75vw;
 }
 
 .tags-row {
@@ -469,15 +472,16 @@ body {
 .vcser-wrapper {
     width: 260px !important;
     height: 100%;
-    background-color: #fff;
+    background: transparent;
     border-radius: 20px;
     transition: all 1s;
-    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .vcser-wrapper:hover {
     cursor: pointer;
-    transform: scale(1.025);
+    transform: scale(1.05);
+    background: #fff;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .info-wrap {
@@ -525,6 +529,11 @@ body {
     justify-content: center !important;
 }
 
+.slick-slide img {
+    display: block;
+    height: 25vh;
+}
+
 .slick-prev:before, .slick-next:before {
     font-size: 40px !important;
     color: #222 !important;
@@ -567,7 +576,7 @@ body {
 .count-text {
     font-size: 16px;
     line-height: 1.5;
-    padding: 20px 120px;
+    padding: 2vh 120px;
     text-align: center;
 }
 
@@ -613,8 +622,8 @@ body {
 
 
 .member-card, .member-card-reverse {
-    height: 220px;
-    width: 150px;
+    height: 35vh;
+    width: 25vh;
     padding: 0;
     margin: 0 8px;
     border-radius: 10px;
@@ -650,6 +659,7 @@ body {
 
 .member-name {
     font-size: 14px;
+    color: var(--primary);
 }
 
 .member-quote {
@@ -798,7 +808,7 @@ body {
 }
 
 .modal .modal-content {
-    background-color: #fefefe;
+    background-color: #f1f1f2;
     margin: 0; /* 15% from the top and centered */
     /* border: 1px solid #888; */
     width: 50%; /* Could be more or less, depending on screen size */
@@ -858,7 +868,7 @@ body {
 .pinUp {
     height: calc(100vh - 60px);
     display: flex;
-    width: 100%;
+    width: 90vw;
     background-color: #fff;
     margin: 30px 0;
   }
@@ -891,9 +901,8 @@ body {
 .textWrap {
     height: 100%;
     display: flex;
-    width: 100px;
+    width: 150px;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     gap: 15px;
     position: relative;
@@ -906,10 +915,53 @@ body {
     color: #222;
     transform: rotate(0.1deg) scale(1);
     transition: all 1s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .history-icon img {
-    height: 4vh;
+    height: 5vh;
+    width: 5vh;
+}
+
+.history-tag-year {
+    padding: 5px;
+    border: 1px solid var(--primary);
+    font-size: 12px;
+    position: absolute;
+    padding: 2px 3vh;
+    z-index: -1;
+    left: 2.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.history-tag-year.active {
+    color: var(--primary);
+}
+
+.history-icon:hover .history-tag-year {
+    color: var(--primary);
+}
+
+.history-tag-year.active i {
+    color: var(--primary);
+}
+
+.history-icon:hover .history-tag-year i {
+    color: var(--primary);
+}
+
+.year-2013 img:nth-child(1) {
+    height: 60vh;
+    margin-left: 8vw;
+}
+.year-2013 img:nth-child(2) {
+    height: 30vh;
+}
+.year-2013 img:nth-child(3) {
+    height: 20vh;
+    top: 45vh !important;
 }
 
 .history-icon:hover {
@@ -917,6 +969,10 @@ body {
 }
 
 .history-icon.active {
+    transform: scale(1.5);
+}
+
+.history-icon:hover {
     transform: scale(1.5);
 }
 
@@ -946,13 +1002,16 @@ body {
     flex: 1;
     color: var(--primary);
     line-height: 1.5;
-    font-size: 30px;
+    font-size: 24px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .history-description {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     color: #222; 
@@ -966,6 +1025,10 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+}
+
+.history-img-wrapper img {
+    height: 40vh;
 }
 
 /* AWARD  */

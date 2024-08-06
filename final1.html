@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./final1.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             @font-face {
             font-family: "PF BeauSans Pro SemiBold";
@@ -45,7 +46,7 @@
                                 width="100%"
                                 height="100%"
                                 class="bg-video"
-                                src="https://www.youtube.com/embed/Dap0qzjlFns?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=Dap0qzjlFns&modestbranding=1&showinfo=0&rel=0"
+                                src="https://www.youtube.com/embed/rKoaBNPTv3s?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=rKoaBNPTv3s&modestbranding=1&showinfo=0&rel=0"
                                 allow="autoplay;"
                                 allowfullscreen>
                             </iframe>
@@ -67,16 +68,26 @@
                                         Với lịch sử chúng ta trân trọng kế thừa, với hiện tại chúng ta hết sức phụng sự, với tương lai chúng ta tập trung kiến tạo. Chỉ cần mình chung sức, đồng lòng - VCS sẽ vượt mọi thách thức và đạt nhiều thành tựu ấn tượng trong những thập kỷ tiếp theo.
                                     </div>
                                     <div style="margin-top: 30px;">
-                                        <button id="more-message-btn">Xem thêm</button>
+                                        <button id="more-message-btn" style="font-family: 'PF BeauSans Pro';">
+                                            Xem thêm
+                                        </button>
                                     </div>
                                 </div>
                                 <img id="double-quote" height="150px" src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/double-quote.svg" />
                                 <div class="bg-img-row"></div>
                                 <div class="img-row">
-                                    <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-1.png" height="120px" width="200px" style="border-radius: 10px; object-fit: cover;"  />
-                                    <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-img-2.png" height="120px" />
-                                    <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-img-4.png" height="120px" />
-                                    <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-8.png" height="120px" width="200px" style="border-radius: 10px;" />
+                                    <div class="img-row-item">
+                                        <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-1.png" />
+                                    </div>
+                                    <div class="img-row-item">
+                                        <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-img-2.png" />
+                                    </div>
+                                    <div class="img-row-item">
+                                        <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-img-4.png"  />
+                                    </div>
+                                    <div class="img-row-item">
+                                        <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/message-8.png" />
+                                    </div>
                                 </div>
                             </div>
                             <div style="position: relative;">
@@ -92,39 +103,79 @@
                     <div class="wrapper">
                         <div class="pinUp">
                             <div class="textWrap">
-                                <div style="border: 1px dashed var(--primary); height: 100%; position: absolute;"></div>
-                                <div class="history-icon" id="2013">
+                                <div style="border: 1px dashed var(--primary); height: 100%; position: absolute; left: 2.5vh;"></div>
+                                <div class="history-icon" id="2013" style="display: flex; align-items: center;">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
                                 </div>
                                 <div class="history-icon" id="2014">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2014" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2014</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2015">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2015" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2015</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2016">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2016" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2016</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2017">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2017" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2017</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2018">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2018" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2018</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2019">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2019" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2019</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2020">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2020" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2020</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2021">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2021" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2021</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2023">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2023" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2023</div>
+                                    </div>
                                 </div>
                                 <div class="history-icon" id="2024">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/history-icon.svg" height="40" width="40" />
+                                    <div id="tag-2024" class="history-tag-year" style="font-family: 'FS Magistral Bold';">
+                                        <i class="fa fa-caret-left" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        <div style="margin-bottom: 2px;">2024</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="contentWrap">
@@ -143,7 +194,7 @@
                                                 <div>the Decade</div>
                                             </div>
                                         </div>
-                                        <div class="description-2013" style="font-size: 16px; margin-left: 200px; line-height: 1.5; text-align: justify; max-width: 60vw;">
+                                        <div class="description-2013" style="font-size: 16px; margin-left: 20vw; line-height: 1.5; text-align: justify; max-width: 60vw;">
                                             “Hành trình 10 năm - 1 thập kỷ của những phấn đấu bền bỉ, 1 thập kỷ của nỗ lực khẳng định tên tuổi, trí tuệ người Vn trong nước và quốc tế. 1 thập kỷ với khởi đầu từ một ban ATTT 6 người tới Công ty ANM hơn 500 người với những thành tích vang danh:
                                         </div>
                                     </div>
@@ -152,7 +203,9 @@
                                     <div>
                                         <div style="display: flex;">
                                             <div class="history-title" style="font-family: FS Magistral Bold;">
-                                                <div>2014.Trung tâm An ninh mạng Viettel được thành lập với sứ mệnh bảo vệ an toàn thông tin trọng yếu cho tập đoàn
+                                                <div style="color: #222;">2014.</div>
+                                                <div>
+                                                    Trung tâm An ninh mạng Viettel được thành lập với sứ mệnh bảo vệ an toàn thông tin trọng yếu cho tập đoàn
                                                 </div>
                                                 <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                     Ngày 14/08/2014, TĐ Viễn thông Quân đội đã ký QĐ số 1762/QĐ-VTQĐ_TCNL thành lập TT. An ninh mạng Viettel. Với nhiệm vụ: Xây dựng công cụ giải pháp phòng thủ cho TĐ trước các nguy cơ tấn công trên không gian mạng; thực hiện đánh giá độc lập, kiểm định các hệ thống nhằm phát hiện nguy cơ, bảo vệ ATTT cho TĐ; nghiên cứu xây dựng phát triển, đóng gói giải pháp sản phẩm dịch vụ ATTT đưa vào triển khai trên mạng lưới; sẵn sàng lực lượng đảm bảo an ninh trên không gian mạng.
@@ -171,20 +224,24 @@
                                             <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2015.jpg" width="80%" style="position: relative; border-radius: 20px;" />
                                         </div>
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2015. Thành lập Trung tâm Gíám sát và Phản ứng trên không gian mạng (Security Intelligence & Response Center) - Trái tim của Trung tâm An ninh mạng Viettel
+                                            <div style="color: #222;">2015.</div>
+                                            <div>
+                                                Thành lập Trung tâm Gíám sát và Phản ứng trên không gian mạng (Security Intelligence & Response Center) - Trái tim của Trung tâm An ninh mạng Viettel
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Làm thế nào để kiểm soát tập trung vấn đề ATTT trong các hệ thống của tập đoàn với điều kiện đặc thù như của Viettel: nhiều môi trường, quy trình và nền tảng… khác nhau, trải rộng ở nhiều quốc gia, vô cùng phức tạp, mà lại không thể mua ngoài vì không đáp ứng được yêu cầu quan trọng ""làm chủ công nghệ"" cũng như ""bảo mật tối đa"" cho hệ thống đặc thù Viettel?"" Anh Trịnh Hoài Nam, Nguyễn Văn Huy, Đinh Hữu Công cùng các đồng nghiệp tại Trung tâm An ninh mạng nhận nhiệm vụ với tư tưởng “đón nhận thách thức lớn”. Từ ""sự tín nhiệm và tinh thần bền bỉ - không có việc gì khó, chỉ sợ lòng không bền"", trung tâm giám sát tập trung được hình thành - là tập hợp con người và giải pháp ATTT đi kèm với bộ quy trình hỗ trợ xử lý tương tự chuẩn GNOC (Global Network Operation Center, cho phép đo lường mức độ an toàn và giám sát được vấn đề ATTT của các hệ thống nhằm đánh giá chính xác vấn đề ATTT trên toàn bộ mạng lưới (cho hơn 3.000 máy chủ của Viettel tại 10 quốc gia) - điều mà chưa đơn vị nào tại Việt Nam triển khai được tại thời điểm đó.
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="content year-2016 content-2" style="z-index: 0;">
                                     <div style="display: flex;">
                                         <div style="font-family: FS Magistral Bold; flex: 3;" class="history-title">
-                                            <div>2016. Xử lý thành công sự cố Vietnam Airlines. 
-                                                Thành viên của TT ANM đã tìm ra 8 lỗ hổng zero-day của các hệ thống lớn như Facebook, Zimbra, Adobe Reader, PHP
+                                            <div style="color: #222;">2016.
                                             </div>
+                                                Xử lý thành công sự cố Vietnam Airlines. 
+                                                Thành viên của TT ANM đã tìm ra 8 lỗ hổng zero-day của các hệ thống lớn như Facebook, Zimbra, Adobe Reader, PHP
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 <p style="font-family: PF BeauSans Pro;" >- Ngày 29/7/2016, Vietnam Airlines gặp sự cố tấn công mạng tầm cỡ quốc gia. Đội ngũ An ninh mạng Viettel - lúc này đã trở thành Trung tâm An ninh mạng Viettel - dành khoảng 1 tháng hỗ trợ Vietnam Airlines khắc phục sự cố và ngăn chặn nguy cơ bị tấn công trở lại. Một tháng chiến đấu bền bỉ, với 30 người/ngày. Trong 2 tuần đầu, anh em gần như không ngủ, cường độ làm việc hơn 20h/ngày. Liên tục thay nhau chợp mắt tại chỗ làm việc trong phòng máy chủ với nhiệt độ trung bình 10-15 độ, giữa mùa hè! ""Lăn xả, quyết liệt, bền bỉ, kề vai sát cánh, hi sinh niềm vui cá nhân vì lợi ích chung"" chính là keyword để Trung tâm An ninh mạng Viettel xử lý thành công sự cố VNA. Sự kiện chính là sự Khẳng định cho năng lực + tinh thần ""striving"" của người VCS. Khẳng định sự trưởng thành vượt bậc cả về kỹ năng xử lý sự cố và khả năng phát triển sản phẩm, giải pháp ATTT - của người Việt - cho người Việt.</p>
                                                 <p style="font-family: PF BeauSans Pro;" >-  Với sự nỗ lực bền bỉ, làm việc khó với tinh thần ""Dò đá qua sông"", những lỗ hổng 0-day đã bắt đầu xuất hiện như: lỗ hổng nghiêm trọng trên Apache Struts của Phạm Văn Khánh (2015), lỗi 0-day trên nền tảng PHP của anh Nguyễn Hồng Quang (2016), lỗi Virtualbox trên nền tảng Oracle của Ngô Anh Huy (2017),... như tiếp lửa đam mê và tự tin, xây chắc nền móng nhằm phát triển đội ngũ nhân sự ""làm bảo mật"" world-class, tập trung nghiên cứu chuyên sâu và tìm kiếm lỗ hổng quan trọng rất thành công như này hôm nay.
@@ -193,11 +250,11 @@
                                         </div>
                                         <div class="history-img-wrapper" style="flex: 2;">
                                             <div style="display: flex; gap: 20px;">
-                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2016-Vietnam%20Airline%202016%20-2.jpg" width="40%" style="position: relative; border-radius: 20px;" />
-                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2016-Vietnam%20Airline%202016.jpg" width="40%" style="position: relative; border-radius: 20px;" />
+                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2016-Vietnam%20Airline%202016%20-2.jpg" width="50%" style="position: relative; border-radius: 10px;" />
+                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2016-Vietnam%20Airline%202016.jpg" width="50%" style="position: relative; border-radius: 10px;" />
                                             </div>
                                             <div>
-                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2015-huy.jpg" width="80%" style="position: relative; border-radius: 20px;" />
+                                                <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/2015-huy.jpg" width="100%" style="position: relative; border-radius: 10px;" />
                                             </div>
                                         </div>
                                     </div>
@@ -205,30 +262,35 @@
                                 <div class="content year-2017 content-3" style="z-index: 0;">
                                     <div style="display: flex;">
                                         <div class="history-img-wrapper" style="flex: 2;">
-                                            <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/kihopdongvnal.PNG" width="80%" style="position: relative; border-radius: 20px;" />
-                                            <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/IMG_5232.JPG" width="80%" style="position: relative; border-radius: 20px;" />
+                                            <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/kihopdongvnal.PNG" style="height: 35vh; border-radius: 10px;" width="80%" style="position: relative; border-radius: 20px;" />
+                                            <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/IMG_5232.JPG" style="height: 35vh; margin-top: 40px; border-radius: 10px;" width="80%" style="position: relative; border-radius: 20px;" />
                                         </div>
-                                        <div style="font-family: FS Magistral Bold; flex: 3;" class="history-title">
-                                            <div>2017. Trung tâm An ninh mạng Viettel ký kết hợp đồng kinh doanh bên ngoài đầu tiên
+                                        <div style="flex:3; display: flex; flex-direction: column;">
+                                            <div style="margin: 5px; font-family: FS Magistral Bold;" class="history-title">
+                                                <div><span style="color: #222;">2017.
+                                                </span>
+                                                Trung tâm An ninh mạng Viettel ký kết hợp đồng kinh doanh bên ngoài đầu tiên</div>
+                                                <div class="history-description" style="font-family: PF BeauSans Pro;">
+                                                    Trong quá trình xử lý sự cố của Vietnam Airlines, rất nhiều giải pháp tự chủ - phát triển cho nội bộ Viettel được mang ra áp dụng trực tiếp trong quá trình xử lý sự cố và đạt những thành công lớn. Nhận thấy sản phẩm, dịch vụ nội bộ giải quyết vấn đề cho nhiều tổ chức, đơn vị khác nhau , Trung tâm An ninh mạng Viettel bắt đầu triển khai cung cấp dịch vụ, sản phẩm ra bên ngoài. Ký kết hợp đồng kinh doanh đầu tiên với khách hành chính là Vietnam Airlines. Đặt tiền đề cho việc thành lập công ty và mở rộng mô hình kinh doanh vào năm 2018.
+                                                </div>
                                             </div>
-                                            <div class="history-description" style="font-family: PF BeauSans Pro;">
-                                                Trong quá trình xử lý sự cố của Vietnam Airlines, rất nhiều giải pháp tự chủ - phát triển cho nội bộ Viettel được mang ra áp dụng trực tiếp trong quá trình xử lý sự cố và đạt những thành công lớn. Nhận thấy sản phẩm, dịch vụ nội bộ giải quyết vấn đề cho nhiều tổ chức, đơn vị khác nhau , Trung tâm An ninh mạng Viettel bắt đầu triển khai cung cấp dịch vụ, sản phẩm ra bên ngoài. Ký kết hợp đồng kinh doanh đầu tiên với khách hành chính là Vietnam Airlines. Đặt tiền đề cho việc thành lập công ty và mở rộng mô hình kinh doanh vào năm 2018.
-                                            </div>
-                                            <div style="font-family: FS Magistral Bold; margin-left: 0;" class="history-title">2017. Bảo đảm ATTT cho sự kiện ""Tuần lễ Cấp cao Diễn đàn hợp tác kinh tế châu Á-Thái Bình Dương (APEC) 2017""
-                                            </div>
-                                            <div class="history-description" style="font-family: PF BeauSans Pro;">
-                                                Với sứ mệnh phụng sự quốc gia, đảm bảo An toàn thông tin trên không gian mạng, VCS đóng vai trò then chốt trong việc đảm bảo An toàn thông tin Hạ tầng Viễn thông và Công nghệ thông tin xuyên suốt tuần lễ hội nghị cấp cao Apec - Hội nghị . Một tháng trước sự kiện, Team VCS đã tập trung xây dựng kịch bản ứng cứu trong trường hợp bị tấn công, diễn tập giả lập tấn công vào hệ thống tại trung tâm báo chí, từ đó xem xét các khả năng, tình huống bị tấn công, phá hoại trên thực tế cũng như trên không gian mạng để xây dựng các phương án ứng phó khi tình huống xảy ra.
-                                                Không chỉ lên kế hoạch bảo vệ, nâng cao giám sát, đảm bảo tốt nhất, an toàn nhất cho các trang thiết bị, VCS còn tập trung tăng cường bảo vệ an toàn thông tin, an ninh mạng trong các trường hợp bị hacker tấn công nhằm gây gián đoạn thông tin hay chiếm quyền kiểm soát hệ thống.
+                                            <div style="margin: 5px; font-family: FS Magistral Bold;" class="history-title">
+                                                <div><span style="color: #222;">2017.
+                                                </span>Bảo đảm ATTT cho sự kiện ""Tuần lễ Cấp cao Diễn đàn hợp tác kinh tế châu Á-Thái Bình Dương (APEC) 2017""</div>
+                                                <div class="history-description" style="font-family: PF BeauSans Pro;">
+                                                    Với sứ mệnh phụng sự quốc gia, đảm bảo An toàn thông tin trên không gian mạng, VCS đóng vai trò then chốt trong việc đảm bảo An toàn thông tin Hạ tầng Viễn thông và Công nghệ thông tin xuyên suốt tuần lễ hội nghị cấp cao Apec - Hội nghị . Một tháng trước sự kiện, Team VCS đã tập trung xây dựng kịch bản ứng cứu trong trường hợp bị tấn công, diễn tập giả lập tấn công vào hệ thống tại trung tâm báo chí, từ đó xem xét các khả năng, tình huống bị tấn công, phá hoại trên thực tế cũng như trên không gian mạng để xây dựng các phương án ứng phó khi tình huống xảy ra.
+                                                    Không chỉ lên kế hoạch bảo vệ, nâng cao giám sát, đảm bảo tốt nhất, an toàn nhất cho các trang thiết bị, VCS còn tập trung tăng cường bảo vệ an toàn thông tin, an ninh mạng trong các trường hợp bị hacker tấn công nhằm gây gián đoạn thông tin hay chiếm quyền kiểm soát hệ thống.
+                                                </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div class="content year-2018 content-4" style="z-index: 0;">
                                     <div style="display: flex;">
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2018. Công ty được thành lập. Nhận Cờ thi đua của Bộ Quốc Phòng
+                                            <div style="color: #222;">2018.
                                             </div>
+                                            <div>Công ty được thành lập. Nhận Cờ thi đua của Bộ Quốc Phòng</div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Vào ngày 14/08/2018. Trung tâm An ninh mạng Viettel chính thức chuyển mình, trở thành Công ty An ninh mạng Viettel (Viettel Cyber Security). Với gần  200 nhân sự, trong đó có những chuyên gia người Việt hàng đầu trong lĩnh vực an ninh mạng, sở hữu nhiều chứng chỉ an toàn thông tin uy tín và danh tiếng được toàn thế giới công nhận như CISSP, CCIE, CEH, Security+… Đội ngũ chuyên gia của công ty cũng khai thác hơn 100 lỗ hổng 0-day - là những lỗi chưa từng được phát hiện trên thế giới của các hệ thống bảo mật uy tín toàn cầu. Nhiều lỗ hổng tìm ra đã được Google, Facebook, Microsoft vinh danh và trao thưởng. Mỗi năm, hệ thống phòng thủ của Công ty An ninh mạng Viettel ngăn chặn được hơn 25.000 cuộc tấn công an ninh mạng của hacker (tin tặc) trên thế giới vào hệ thống của Viettel và khách hàng. Bên cạnh đó, VCS đã tập trung tự chủ xây dựng và phát triển giải pháp dịch vụ: Hệ thống giám sát An toàn thông tin tập trung (SOC); Hệ thống giám sát và bảo vệ cho mạng viễn thông, chống lậu cước; Hệ thống giám sát và bảo vệ ứng dụng Web trên nền tảng điện toán đám mấy; Hệ thống quản lý An toàn thông tin cho mạng Văn phòng cùng với nhóm dịch vụ chính bao gồm: Dịch vụ giám sát và xử lý sự cố an toàn thông tin 24/7; Dịch vụ kiểm định đánh giá an toàn thông tin cho hệ thống và ứng dụng; Dịch vụ rà soát gỡ bỏ mã độc… Nhiều sản phẩm đã đạt các giải thưởng danh giá trên thế giới như Giải đồng IT World Awards 2016, giải Bạc Stevie Awards 2017; và các giải thưởng dành cho các hacker mũ trắng trên thế giới như White Hat 9, Snatching The Hat….
                                             </div>
@@ -244,7 +306,10 @@
                                             <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/vpbank" width="80%" style="position: relative; border-radius: 20px;" />
                                         </div>
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2019. Hỗ trợ xử lý sự cố của Bank X, tạo tiền đề "tin tưởng và đồng hành" với với nhóm khách hàng khó tính.
+                                            <div style="color: #222;">2019.
+                                            </div>
+                                            <div>
+                                                Hỗ trợ xử lý sự cố của Bank X, tạo tiền đề "tin tưởng và đồng hành" với với nhóm khách hàng khó tính.
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Công ty mới bắt đầu kinh doanh bên ngoài, nhiều sản phẩm và dịch vụ chưa hoàn thiện. Tuy nhiên, để khẳng định vị thế tiên phong và số 1 Việt Nam, VCS cần chinh phục trái tim khách hàng khó. 2019, Bank X gặp sự cố. VCS tham gia hỗ trợ xử lý sự cố với tinh thần hỗ trợ hết mình, dù cho đã là đối tác hay chưa. Trong thời gian xử lý sự cố, Anh em luôn túc trực 24/7, thậm chí nhân sự của VCS làm việc tại Bank X còn nhiều hơn chính nhân sự của họ. Với sự nhiệt tình, tận tụy và khả năng xử lý sự cố rất tốt, VCS đã thuyết phục được cả cán bộ kĩ thuật lẫn quản lý cấp cao của Bank X khiến họ chuyển sang sử dụng dịch vụ của VCS. Quá trình đồng hành xử lý sự cố triệt để đã giúp VCS chứng minh được năng lực, xây dựng niềm tin vững chắc, thỏa mãn được khách hàng khó tính nhất. Vững bước trên con đường khẳng định vị thế số 1 Việt Nam.
@@ -255,8 +320,9 @@
                                 <div class="content year-2020 content-6" style="z-index: 0;">
                                     <div style="display: flex;">
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2020. Triển khai Msuite - Cung cấp giải pháp làm việc từ xa trong trạng thái dịch bệnh, góp vai trò quan trọng trong trạng thái bình thường mới
-                                                
+                                            <div style="color: #222;">2020.</div>
+                                            <div>
+                                                Triển khai Msuite - Cung cấp giải pháp làm việc từ xa trong trạng thái dịch bệnh, góp vai trò quan trọng trong trạng thái bình thường mới
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Trong bối cảnh đại dịch Covid-19, hầu hết các doanh nghiệp, tổ chức đều tiến hành dịch chuyển sang hình thức làm việc từ xa. Từ đó, việc kết nối các thiết bị từ hệ thống mạng bên ngoài đến mạng nội bộ tiềm ẩn nhiều điểm yếu về bảo mật cũng như các nguy cơ lộ lọt, mất an toàn thông tin. Với sứ mệnh bảo vệ An toàn thông tin của người Việt trên không gian, VCS đã phát triển và cho ra mắt giải pháp Viettel Enterprise Mobility Suite (VCS M-Suite), góp phần bảo mật mạng lưới ATTT trong quá trình kết nối và truy cập từ xa của DN, giải quyết được bài toán bình thường mới trong điều kiện dịch bệnh diễn biến phức tạp.
@@ -273,7 +339,10 @@
                                             <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/namphi.PNG" width="80%" style="position: relative; border-radius: 20px;" />
                                         </div>
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2021. VCS ký kết Hợp đồng quốc tế đầu tiên.
+                                            <div style="color: #222;">2021.
+                                            </div>
+                                            <div>
+                                                VCS ký kết Hợp đồng quốc tế đầu tiên.
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Tháng 12/2021, VCS chính thức ký được hợp đồng quốc tế đầu tiên với đối tác tại thị trường Nam Phi. Đây được coi là một bước chuyển mình quan trọng của VCS từ một nhà cung cấp sản phẩm dịch vụ nội địa chính thức thâm nhập thị trường quốc tế. Dấu mốc cho khát vọng đưa VCS trở thành công ty toàn cầu.
@@ -285,7 +354,10 @@
                                 <div class="content year-2023 content-8" style="z-index: 0;">
                                     <div style="display: flex;">
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2023. Vô địch P2W, lên đỉnh realworld sau 3 năm thử sức trên sân chơi hàng đầu thế giới.
+                                            <div style="color: #222;">2023.
+                                            </div>
+                                            <div>
+                                                Vô địch P2W, lên đỉnh realworld sau 3 năm thử sức trên sân chơi hàng đầu thế giới.
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 VCS - Team Viettel vô địch P2O 2023 từ đội hình 14 thành viên với tuổi đời còn rất trẻ 75% thế hệ Gen Z, thành viên lớn tuổi nhất là 34, thành viên nhỏ tuổi nhất mới chỉ 20. Để vô địch sân chơi bảo mật uy tín hàng đầu thế giới, người VCS phải tìm ra những lỗ hổng độc đáo nhất không một ai trên thế giới tìm ra được. ""Chắc chắn lĩnh vực an ninh mạng còn rất rộng lớn, còn nhiều thách thức. Nhưng thách thức càng lớn, càng thôi thúc khao khát chinh phục. Chuyên gia tại VCS sẽ tham gia sâu, rộng hơn nữa, không chỉ dừng lại ở IOT mà còn là công nghiệp, năng lượng, điện… tiếp tục khẳng định năng lực và vị thế về an toàn thông tin cho Viettel và cho toàn Việt Nam trên trường quốc tế.
@@ -302,7 +374,9 @@
                                             <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/dna.png" width="80%" style="position: relative; border-radius: 20px; background: var(--primary); padding: 20px;" />
                                         </div>
                                         <div style="font-family: FS Magistral Bold;" class="history-title">
-                                            <div>2024 và tương lai: Vững bước, kiên định “Conquer the world!”
+                                            <div style="color: #222;">2024 và tương lai:</div>
+                                            <div>
+                                                Vững bước, kiên định “Conquer the world!”
                                             </div>
                                             <div class="history-description" style="font-family: PF BeauSans Pro;">
                                                 Hướng tới năm 2025 và 2030, bên cạnh những những mục tiêu định lượng được như Top 1 thị trường Việt, Top 3 Đông Nam Á…, khát vọng của người VCS chính là chuyển mình sang mô hình công ty kinh doanh toàn cầu đúng nghĩa. 
@@ -312,7 +386,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content year-2024 content-10 remaining" style="z-index: 0;">2023</div>
+                                <!-- <div class="content year-2024 content-10 remaining" style="z-index: 0;">2023</div> -->
                             </div>
                         </div>
                     </div>
@@ -322,11 +396,11 @@
                         width="100%"
                         height="100%"
                         class="bg-video"
-                        src="https://www.youtube.com/embed/jtHKtbGpgXQ?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=jtHKtbGpgXQ&modestbranding=1&showinfo=0"
+                        src="https://www.youtube.com/embed/lSFCS3TUenI?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=lSFCS3TUenI&modestbranding=1&showinfo=0"
                         allow="autoplay;"
                         allowfullscreen>
                     </iframe>
-                    <div class="award-container" style="font-family: PF BeauSans Pro;">
+                    <div class="award-container" style="font-family: PF BeauSans Pro SemiBold;">
                         <div class="award-title" style="font-family: 'FS Magistral Bold';">
                             VCS's Awards
                         </div>
@@ -382,7 +456,7 @@
                         class="bg-video"
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/zq-lJwb9yOM?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=zq-lJwb9yOM&modestbranding=1&showinfo=0"
+                        src="https://www.youtube.com/embed/u1yNnswh4g4?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=u1yNnswh4g4&modestbranding=1&showinfo=0"
                         allow="autoplay;"
                         allowfullscreen>
                     </iframe>
@@ -416,7 +490,7 @@
                     </div>
                 </section>
                 <section class="panel vcser-container">
-                    <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; gap: 30px;">
+                    <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; gap: 3vh;">
                         <div class="vcser-subtitle" style="font-family: 'FS Magistral Bold';">What VCSers talk about when talking about</div>
                         <div class="vcser-title" style="font-family: 'FS Magistral Bold';">
                             STRIVING TO RISE
@@ -431,7 +505,7 @@
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-2.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
                                         <div class="vcser-talk">Giá trị mình bền bỉ tạo ra cho khách hàng - chính là phần thưởng lớn nhất.
-                                            <span><button data-trigger=0 class="talker-btn" id="talker-1">Xem thêm</button></span>
+                                            <span><button data-trigger=0 class="talker-btn" id="talker-1" style="font-family: 'PF BeauSans Pro';">Xem thêm</button></span>
                                         </div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Nguyễn Công Cường</div>
@@ -441,7 +515,7 @@
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-1.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">Để chinh phục đỉnh núi cao, mình cần bền bỉ đồng hành cùng từng đồng đội trong tim. <span><button data-trigger=1 class="talker-btn" id="talker-2">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">Để chinh phục đỉnh núi cao, mình cần bền bỉ đồng hành cùng từng đồng đội trong tim. <span><button data-trigger=1 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-2">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Trần Minh Quảng</div>
                                         <div class="vcser-role">Giám đốc trung tâm phân tích và chia sẻ nguy cơ An ninh mạng</div>
@@ -450,16 +524,16 @@
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-3.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">Chỉ có con đường bằng phẳng cho người dám bền bỉ mở lối đi riêng! <span><button data-trigger=2 class="talker-btn" id="talker-3">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">Chỉ có con đường bằng phẳng cho người dám bền bỉ mở lối đi riêng! <span><button data-trigger=2 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-3">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Trịnh Hoài Nam</div>
-                                        <div class="vcser-role">Giám đốc phòng sản phẩm Mass</div>
+                                        <div class="vcser-role">Trưởng phòng sản phẩm Mass</div>
                                     </div>
                                 </div>
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-4.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">Bền bỉ kiến tạo sân chơi - thay đổi cục diện “Làm An toàn thông tin” của Việt Nam <span><button data-trigger=3 class="talker-btn" id="talker-4">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">Bền bỉ kiến tạo sân chơi - thay đổi cục diện “Làm An toàn thông tin” của Việt Nam <span><button data-trigger=3 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-4">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Mai Xuân Cường</div>
                                         <div class="vcser-role">Giám đốc Trung tâm dịch vụ An toàn thông tin</div>
@@ -468,16 +542,16 @@
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-5.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">"Lần đầu tiên phát hiện sự cố tấn công tại hệ thống VCS" <span><button data-trigger=4 class="talker-btn" id="talker-5">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">"Lần đầu tiên phát hiện sự cố tấn công tại hệ thống VCS" <span><button data-trigger=4 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-5">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Nguyễn Hồng Quang</div>
-                                        <div class="vcser-role">Chuyên viên nghiên cứu chuyên sâu - Trung tâm dịch vụ ATTT</div>
+                                        <div class="vcser-role">Chuyên viên nghiên cứu chuyên sâu An toàn thông tin</div>
                                     </div>
                                 </div>
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-6.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">Bền bỉ trong việc thích ứng nhanh với những thay đổi mới <span><button data-trigger=5 class="talker-btn" id="talker-6">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">Bền bỉ trong việc thích ứng nhanh với những thay đổi mới <span><button data-trigger=5 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-6">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Chị Trần Thu Hường</div>
                                         <div class="vcser-role">Trưởng phòng Kế hoạch -<br /> Quy trình</div>
@@ -486,10 +560,10 @@
                                 <div class="vcser-wrapper">
                                     <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Gen2/talker-7.png" width="100%" style="object-fit: cover; border-radius: 20px 20px 0 0;" />
                                     <div class="info-wrap">
-                                        <div class="vcser-talk">“Khác biệt luôn nằm  ở 5% cuối cùng”<span><button data-trigger=6 class="talker-btn" id="talker-6">Xem thêm</button></span></div>
+                                        <div class="vcser-talk">“Khác biệt luôn nằm  ở 5% cuối cùng”<span><button data-trigger=6 class="talker-btn" style="font-family: 'PF BeauSans Pro';" id="talker-6">Xem thêm</button></span></div>
                                         <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                                         <div class="vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Đinh Hữu Công</div>
-                                        <div class="vcser-role">Giám đốc sản phẩm</div>
+                                        <div class="vcser-role">Trưởng phòng sản phẩm MSS</div>
                                     </div>
                                 </div>
                               </div>
@@ -500,9 +574,6 @@
                     <div>
                         <div class="count-content">
                             <div class="count-data" style="font-family: 'FS Magistral Bold';">100</div>
-                            <div class="count-text" style="font-family: 'PF BeauSans Pro';">
-                                Lorem ipsum dolor sit amet consectetur. Velit at facilisi eget massa augue nunc vitae pretium. Molestie quisque donec pellentesque hendrerit cursus ipsum dolor praesent neque. In cursus phasellus proin pulvinar urna.
-                            </div>
                         </div>
                     </div>
                     <div>
@@ -993,7 +1064,7 @@
                                 height="100%"
                                 width="100%"
                                 class="bg-video-bottom"
-                                src="https://www.youtube.com/embed/FDy3-D2Lxek?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=FDy3-D2Lxek&modestbranding=1&showinfo=0"
+                                src="https://www.youtube.com/embed/SKr9pixW_io?loop=1&autoplay=1&mute=1&controls=0&disablekb=1&playlist=SKr9pixW_io&modestbranding=1&showinfo=0"
                                 allow="autoplay;"
                                 allowfullscreen>
                             </iframe>
@@ -1216,8 +1287,17 @@
                         const prevItem = document.getElementsByClassName(`year-${prev}`);
                         prevHistoryIcon.classList.remove('active');
                         prevItem[0].style.zIndex = "0";
+                        if (prev !== 2013) {
+                            const prevTagYear = document.getElementById(`tag-${prev}`);
+                            prevTagYear.classList.remove('active');
+                        }
                     }
                     const currentItem = document.getElementsByClassName(`year-${item.id}`);
+                    console.log(item.id);
+                    if (item.id !== '2013') {
+                        const currentTagYear = document.getElementById(`tag-${item.id}`);
+                        currentTagYear.classList.add('active');
+                    }
                     currentItem[0].style.zIndex = "1";
                     prev = item.id;
                 })
@@ -1410,7 +1490,7 @@
                 {
                     id: 3,
                     name: 'Trịnh Hoài Nam',
-                    title: 'Giám đốc phòng sản phẩm Mass',
+                    title: 'Trưởng phòng sản phẩm Mass',
                     imageHeader: 'https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/headernhanvat/trinh%20hoai%20nam%20header.png',
                     imageDescription: 'https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/talker-description-3.png',
                     quote: 'Chỉ có con đường bằng phẳng cho người dám bền bỉ mở lối đi riêng!',
@@ -1450,7 +1530,7 @@
                 {
                     id: 7,
                     name: 'Đinh Hữu Công',
-                    title: 'Giám đốc sản phẩm',
+                    title: 'Trưởng phòng sản phẩm MSS',
                     imageHeader: 'https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/headernhanvat/dinh%20huu%20cong%20header.png',
                     imageDescription: 'https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/talker-description-7.png',
                     quote: 'Khác biệt luôn nằm  ở 5% cuối cùng',

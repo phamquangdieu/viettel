@@ -326,17 +326,25 @@
               Điều gì là đã và đang là nhiên liệu, cháy lên sức trẻ và nhiệt huyết của người VCS, vì một mục tiêu “Mang trí tuệ Việt chảy khắp năm châu”?
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; margin-top: 20px;">
-              <div class="mb-tag-item">#TỰ HÀO</div>
-              <div class="mb-tag-item">#PHỤNG SỰ</div>
-              <div class="mb-tag-item">#VƯƠN XA</div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="mb-tag-item">#TỰ HÀO</div>
+                <div class="mb-tag-item">#PHỤNG SỰ</div>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="mb-tag-item">#VƯƠN XA</div>
               <div class="mb-tag-item">#ĐAM MÊ</div>
+              </div>
               <div class="mb-tag-item">#NHIỆT HUYẾT</div>
               <img src="https://atm248036-s3user.vcos.cloudstorage.com.vn/10-nam-vcs-2/Public/dna.png" id="tag-5" width="75%" />
               <div class="mb-tag-item">#ĐỒNG HÀNH</div>
-              <div class="mb-tag-item">#TIN CẬY</div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="mb-tag-item">#TIN CẬY</div>
               <div class="mb-tag-item">#TIÊN PHONG</div>
-              <div class="mb-tag-item">#THÁCH THỨC</div>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="mb-tag-item">#THÁCH THỨC</div>
               <div class="mb-tag-item">#BỀN BỈ</div>
+              </div>
             </div>
           </div>
 
@@ -378,7 +386,7 @@
                       <div class="mb-vcser-talk">Chỉ có con đường bằng phẳng cho người dám bền bỉ mở lối đi riêng! <span><button data-trigger=2 class="mb-talker-btn" id="talker-3">Xem thêm</button></span></div>
                       <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                       <div class="mb-vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Trịnh Hoài Nam</div>
-                      <div class="mb-vcser-role">Giám đốc phòng sản phẩm Mass</div>
+                      <div class="mb-vcser-role">Trưởng phòng sản phẩm Mass</div>
                   </div>
               </div>
               <div class="mb-vcser-wrapper">
@@ -396,7 +404,7 @@
                       <div class="mb-vcser-talk">"Lần đầu tiên phát hiện sự cố tấn công tại hệ thống VCS" <span><button data-trigger=4 class="mb-talker-btn" id="talker-5">Xem thêm</button></span></div>
                       <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                       <div class="mb-vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Nguyễn Hồng Quang</div>
-                      <div class="mb-vcser-role">Chuyên viên nghiên cứu chuyên sâu - Trung tâm dịch vụ ATTT</div>
+                      <div class="mb-vcser-role">Chuyên viên nghiên cứu chuyên sâu An toàn thông tin</div>
                   </div>
               </div>
               <div class="mb-vcser-wrapper">
@@ -414,7 +422,7 @@
                       <div class="mb-vcser-talk">“Khác biệt luôn nằm  ở 5% cuối cùng”<span><button data-trigger=6 class="mb-talker-btn" id="talker-6">Xem thêm</button></span></div>
                       <div style="border: 0.5px solid #555; margin: 12px 5px;"></div>
                       <div class="mb-vcser-name" style="font-family: PF BeauSans Pro Bold;">Anh Đinh Hữu Công</div>
-                      <div class="mb-vcser-role">Giám đốc sản phẩm</div>
+                      <div class="mb-vcser-role">Trưởng phòng sản phẩm MSS</div>
                   </div>
               </div>
             </div>
@@ -423,9 +431,7 @@
           <!-- Member  -->
           <div>
             <div style="color: var(--primary); font-family: 'FS Magistral Bold'; font-size: 96px; text-align: center; letter-spacing: 10px;" class="mb-count-data">100</div>
-            <div style="margin-top: 20px; padding: 0 20px; font-size: 14px; font-family: 'PF BeauSans Pro'; text-align: center;">
-              Lorem ipsum dolor sit amet consectetur. Velit at facilisi eget massa augue nunc vitae pretium. Molestie quisque donec pellentesque hendrerit cursus ipsum dolor praesent neque. 
-            </div>
+            
             <div style="margin-top: 30px;">
               <div id="member-slide">
                   <div class="move">
@@ -1139,7 +1145,7 @@
           
           for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
+              this.classList.toggle("active-collapse");
               var content = this.nextElementSibling;
               if (content.style.maxHeight){
                 content.style.maxHeight = null;
