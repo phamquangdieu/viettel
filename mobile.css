@@ -74,7 +74,12 @@ body {
   justify-content: center !important;
 }
 
-.mb-slick-class .slick-prev:before, .slick-next:before {
+.mb-slick-class .slick-prev:before {
+  font-size: 25px !important;
+  color: #222 !important;
+}
+
+.mb-slick-class .slick-next:before{
   font-size: 25px !important;
   color: #222 !important;
 }
